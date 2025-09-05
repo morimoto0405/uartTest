@@ -15,9 +15,9 @@ fi
 PIN=4
 CHIP=gpiochip0
 
-#GPIO4を出力モードに設定し、LOWに
-echo "=== Setting GPIO$PIN mode ==="
-gpioset --mode=timebased $CHIP $PIN=0
+# #GPIO4を出力モードに設定し、LOWに
+# echo "=== Setting GPIO$PIN mode ==="
+# gpioset --mode=timebased $CHIP $PIN=0
 
 #GPIO4のエッジ監視
 echo "=== Monitoring GPIO$PIN for power loss ==="
