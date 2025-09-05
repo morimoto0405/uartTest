@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const PORT = 3000;
-const UART_PATH = "/dev/tty0";
+const UART_PATH = "/dev/ttyS0";
 const BAUD_RATE = 9600;
 
 //UART設定
