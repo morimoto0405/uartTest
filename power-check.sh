@@ -24,6 +24,8 @@ echo "=== Monitoring GPIO$PIN for power loss ==="
 echo "Press Ctrl+C to exit"
 
 gpiomon $CHIP $PIN | while read line; do
+    echo "GPIO Event: $line"
+    
     if echo "$line" | grep -q "FALLING"; then
         echo "Power loss detected (LOW)! Shutting down..."
         sudo shutdown -h now
