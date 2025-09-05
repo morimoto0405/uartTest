@@ -3,7 +3,7 @@
 set -e
 
 #1 gpiod　のインストール
-if ! command -v gpiomon & > /dev/null; then
+if ! command -v gpiomon &> /dev/null; then
     echo "gpiod not found. Installing..."
     sudo apt update
     sudo apt install -y gpiod
